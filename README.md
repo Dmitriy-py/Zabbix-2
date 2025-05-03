@@ -100,6 +100,27 @@
 
 ![Снимок экрана (1001)](https://github.com/user-attachments/assets/d17d6400-ddc6-467f-977c-ade60c72d24f)
 
+## Задание 6* со звёздочкой
+
+Создайте UserParameter на bash и прикрепите его к созданному вами ранее шаблону. Он должен вызывать скрипт, который:
+
+при получении 1 будет возвращать ваши ФИО,
+при получении 2 будет возвращать текущую дату.
+
+## Ответ:
+
+![Снимок экрана (1010)](https://github.com/user-attachments/assets/c32727b4-3561-4771-b857-187b31469f76)
+
+![Снимок экрана (1009)](https://github.com/user-attachments/assets/6e8c8019-7117-4598-99cd-6ac2b280ec62)
+
+![Снимок экрана (1008)](https://github.com/user-attachments/assets/5c492894-8d96-4d1f-b3ce-3b8dcf6e7f12)
+
+![Снимок экрана (1007)](https://github.com/user-attachments/assets/a9855a13-8878-430a-8c16-dee9df0e1876)
+
+![Снимок экрана (1006)](https://github.com/user-attachments/assets/0118bc40-80d8-41a9-bcab-1a76abdad162)
+
+
+
 
 
 
