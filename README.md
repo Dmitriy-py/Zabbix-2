@@ -119,10 +119,61 @@
 
 ![Снимок экрана (1006)](https://github.com/user-attachments/assets/0118bc40-80d8-41a9-bcab-1a76abdad162)
 
+## Задание 7* со звёздочкой
+
+Доработайте Python-скрипт из лекции, создайте для него UserParameter и прикрепите его к созданному вами ранее шаблону. Скрипт должен:
+
+при получении 1 возвращать ваши ФИО,
+
+при получении 2 возвращать текущую дату,
+
+делать всё, что делал скрипт из лекции.
 
 
+## Ответ:
 
 
+```
+
+import sys
+import os
+import re
+
+def get_info(arg):
+    if arg == '1':
+        return "Климов Дмитрий Геннадьевич"
+    elif arg == '2':
+        return os.popen("date +%Y-%m-%d").read().strip()
+    else:
+        if arg.startswith('-ping'):
+            try:
+                parts = arg.split()
+                address = parts[1]
+                result = os.popen("ping -c 1 " + address).read()
+                result = re.findall(r"time=(.*) ms", result)
+                return result[0]
+            except Exception as e:
+                return f"Error pinging {address}: {e}"
+
+        elif arg.startswith('-simple_print'):
+            parts = arg.split()
+            text = parts[1]
+            return text
+        else:
+            return f"unknown input: {arg}"
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        print(get_info(sys.argv[1]))
+    else:
+        print("No arguments provided.  Usage: script.py <argument>"
+
+```
+![Снимок экрана (1019)](https://github.com/user-attachments/assets/5815927a-1eb6-4b97-8dcc-230f24fd974e)
+
+![Снимок экрана (1017)](https://github.com/user-attachments/assets/37954a32-d35d-4cf7-b4ce-3fd95cfafd72)
+
+![Снимок экрана (1016)](https://github.com/user-attachments/assets/649ca9dd-26c5-4c7a-86d9-6863e4b38404)
 
 
 
